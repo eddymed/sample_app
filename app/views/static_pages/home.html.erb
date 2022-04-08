@@ -1,12 +1,15 @@
 
-<% provide(:title, "Home") %>
 <div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
-  <h2>This is the home page for the
-    <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+  <h1>bienvenido al Team Smart Runners</h1>
+
+  <h2>
+    Este es el home page de nuestro microblog para compartir los comentarios sobre el
+    <a href="https://smartrunners.xyz/">Team Smart Runners</a>
+    y sus experiencias.
   </h2>
-  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+
+  <%= link_to "Registrate ahora!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
+
 <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
-"https://rubyonrails.org/" %>
+                      "https://rubyonrails.org/" %>
