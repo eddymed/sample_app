@@ -1,12 +1,26 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-fixed-top">
   <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",    root_path %></li>
-        <li><%= link_to "Ayuda",    help_path %></li>
-        <li><%= link_to "Iniciar sesion", '#' %></li>
-      </ul>
+    <%= link_to "Smart Runners", root_path, id: "logo" %>
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light ">
+      <div class="container-fluid">
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-inverse me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <li><%= link_to "Home",    root_path, class: "nav-link active" %></li>
+            </li>
+            <li class="nav-item">
+              <li><%= link_to "Ayuda",    help_path, class: "nav-link active" %></li>
+            </li>
+            <li class="nav-item">
+              <li><%= link_to "Iniciar sesion", '#', class: "nav-link active" %></li>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
